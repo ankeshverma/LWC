@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="demo -23 create a record using record form">
+        <lightning-record-form
+        object-api-name={accountObject}
+        fields={myFields}
+        onsuccess={handleAccountCreated}>
+        </lightning-record-form>
+    </lightning-card>
+
+    <lightning-card title="create a new record using record edit form">
+        <lightning-record-edit-form object-api-name={accountObject} onsuccess={handleAccountCreated}>
+            <lightning-messages></lightning-messages>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field field-name="Name"></lightning-input-field>
+                    <lightning-input-field field-name="Website"></lightning-input-field>
+                </div>
+            </div>
+            <lightning-button type="submit" variant="brand" label="Create Account"></lightning-button>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

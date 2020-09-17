@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="demo-17 - custom event Bubbling" icon-name="action:script">
+        <lightning-layout class="slds-var-m-around_medium">
+            <lightning-layout-item onselected={contactSelected}> 
+                <template for:each={contacts} for:item="contact">
+                    <div key={contact.Id}>
+                        <c-demo-event-propogation-detail contactdetails={contact} ></c-demo-event-propogation-detail>
+                    </div>
+                </template>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout class="slds-var-m-around_medium">
+            <lightning-layout-item class="slds-var-m-left_medium">
+                <template if:true={selectedContact}>
+                    <strong>
+                        Selected Contact
+                    </strong><br>
+                    {selectedContact.Id} === {selectedContact.Name}
+                </template>
+                </lightning-layout-item>
+            </lightning-layout>
+    </lightning-card>
+</template>

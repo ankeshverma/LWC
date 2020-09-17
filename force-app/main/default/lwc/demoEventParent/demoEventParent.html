@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="demo child-parent communication" icon-name="action:script">
+        <lightning-layout title="example-child-parent communication">
+            <c-demo-event-child name="salesforce" title="sfdc" onsimpleevent={handleEventFromParent} ></c-demo-event-child >
+        </lightning-layout>
+        <lightning-layout>
+            <lightning-button label="call child from parent" onclick={handleParent}></lightning-button>
+        </lightning-layout>
+    </lightning-card>
+</template>

@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Wire Apex Call imperatively">
+        <lightning-combobox
+        name="progress"
+        label="Select Account"
+        value={value}
+        placeholder="Select Account"
+        options={options}
+        onchange={handleChange}>
+        </lightning-combobox>
+    
+         <template if:true={allContacts}>
+             HELLO
+           <template for:each={allContacts} for:item="cnt">
+                <p key={cnt.Id}>{cnt.Name} </p>
+            </template>
+       </template>
+    </lightning-card>
+</template>

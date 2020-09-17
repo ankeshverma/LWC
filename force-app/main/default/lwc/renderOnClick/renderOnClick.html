@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="example-3" icon-name="utility:breadcrumbs">
+        <lightning-layout title="example-3">
+            <lightning-layout-item size=10 class="slds-var-m-around_medium">
+                <lightning-input name="firstName" label="First Name">
+                </lightning-input>
+                <lightning-input name="lastName" label="Last Name">
+                </lightning-input>
+                <lightning-button label="click" variant="brand" onclick={handleButtonClick}>
+                </lightning-button>
+                <p>Full Name: {fullName.firstName} {fullName.lastName}</p>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

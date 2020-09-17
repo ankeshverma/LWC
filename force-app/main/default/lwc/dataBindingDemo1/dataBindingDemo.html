@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Practice Exercise" icon-name="utility:breadcrumbs">
+        <lightning-layout title="layout Title">
+            <lightning-layout-item size=10 class="slds-m-around_medium">
+                <lightning-input name="firstName" label="first Name" onchange={handleFullNameChange}>
+                </lightning-input>
+                <lightning-input name="LastName" label="Last Name" onchange={handleFullNameChange}>
+                </lightning-input>
+                <p>fullName: {fullName.firstName} {fullName.LastName}</p>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
