@@ -28,8 +28,7 @@ public without sharing class AccountController {
     }
 
     @AuraEnabled
-    public static void mergeRequestTest(){
-        system.debug('hello Request');
+    public static void mergeRequestTest1(){
     }
 
 
