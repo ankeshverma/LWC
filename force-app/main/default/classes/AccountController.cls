@@ -27,6 +27,11 @@ public without sharing class AccountController {
         update accountList;
     }
 
+    @AuraEnabled
+    public static void mergeRequestTest1(){
+        List<Opportunity> oppList = [select Id from opprotunity];
+    }
+
 
 
 }
