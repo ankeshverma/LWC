@@ -29,7 +29,7 @@ public without sharing class AccountController {
 
     @AuraEnabled
     public static void mergeRequestTest1(){
-        List<Opportunity> oppList = [select Id,Account.Name,stageName,Type from Opportunity];
+        List<Opportunity> oppList = [select Id,Account.Name,stageName,Type,ExpectedRevenue from Opportunity];
     }
 
 
