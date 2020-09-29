@@ -1,0 +1,7 @@
+<template>
+    <div class="slds-box slds-grid slds-gutters slds-wrap">
+        <template for:each={courseDetailInfo} for:item="course">
+            <c-udemy-practice1-child key={course.courseName} course-detail-info={course} class="slds-col"></c-udemy-practice1-child>
+        </template>
+    </div>
+</template>

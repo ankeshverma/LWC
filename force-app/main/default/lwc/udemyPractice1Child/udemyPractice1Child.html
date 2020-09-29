@@ -1,0 +1,19 @@
+<template>
+    <div class="slds-var-m-horizontal_x-small">
+        <lightning-card title={courseDetailInfo.courseName} class="slds-var-p-horizontal_small">
+            <img src={courseDetailInfo.bannerImg} alt="course" style="height:200px"/>
+            <br/>
+            <ul class="slds-p-left_small slds-p-right_small">
+                <li>
+                    Course Fee: {courseDetailInfo.courseFee}
+                </li>
+                <li>
+                    Course Duration: {courseDetailInfo.courseDuration}
+                </li>
+            </ul>
+            <div slot="footer" class="slds-text-heading_large slds-text-color_success">
+                {courseDetailInfo.courseRating}
+            </div>
+        </lightning-card>
+    </div>
+</template>
